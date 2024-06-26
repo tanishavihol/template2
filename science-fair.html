@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gliding Polaroid with Videos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(90deg, rgba(255,0,150,0.5), rgba(0,204,255,0.5));
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .polaroid {
+            margin-right:200px;
+            position: relative;
+            width: 300px;
+            padding: 10px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .polaroid:hover {
+            transform: translateY(-20px);
+        }
+
+        .polaroid img {
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .polaroid .caption {
+            margin: 10px 0;
+            font-family: 'Pacifico', cursive;
+            color: #ff007f;
+        }
+
+        .polaroid .info {
+            text-align: left;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .info-section {
+            margin: 10px 0;
+        }
+
+        .info-section .section-title {
+            font-weight: bold;
+            color: #00ccff;
+        }
+
+        .videos {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .videos iframe {
+            width: 560px;
+            height: 315px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <div class="polaroid">
+        <img src="https://georgebrata.ro/alege-un-website/017-known-master/images/author-image3.jpg" alt="Profile Image">
+        <div class="caption">Profile Snapshot</div>
+        <div class="info">
+            <div class="info-section">
+                <div class="section-title">Education:</div>
+                <div>Completed graduation from Boston University in the field of Information Technology.</div>
+            </div>
+            <div class="info-section">
+                <div class="section-title">Certificates:</div>
+                <div>Achieved certificates from Great Learning and Coursera in the fields of Web Development and Network Security.</div>
+                <div>Participation certificates for participating in Hackathon IIT Gandhinagar.</div>
+            </div>
+            <div class="info-section">
+                <div class="section-title">Experience:</div>
+                <div>Experienced professor in a known educational institute for 3 years teaching Web Development.</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="videos">
+        <iframe src="https://www.youtube.com/embed/IPO6fX4ZTnM?si=uiBlXRJzxb9ZUSGG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/zi1PMYXmkmo?si=lscfEUfZH7cTYF3o" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/qCuFjXGSVB4?si=VCNbPPSOp86Mal25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/x1ixw6g0QIM?si=dVczzNDIJ6F1WMj6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/sad1o7Ksrv4?si=SUXRKeGicmvYuxp7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/47pg4gVkaIM?si=eUy5L4Q4yLIQCPtc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+</body>
+</html>
